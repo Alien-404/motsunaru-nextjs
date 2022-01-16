@@ -46,10 +46,10 @@ export default function RecipeDetails({recipe}) {
 
   return (
     <>
-    <Head>
-        <title>{`${title} | MotsuNaru`}</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
+      <Head>
+          <title>{`${title} | MotsuNaru`}</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
 
       <div>
         <div className="banner">
