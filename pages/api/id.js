@@ -6,7 +6,10 @@ export default function handler(req, res) {
   const default_date = moment(data_time)
     .tz('Asia/Jakarta')
     .format('h:mm:ss a, MMMM Do YYYY');
-  const full_date = moment(data_time).format('H:mm:ss a, MMMM Do YYYY');
+  const full_date = moment(data_time)
+    .tz('Asia/Jakarta')
+    .locale('id')
+    .format('H:mm:ss a, MMMM Do YYYY');
   const current_date = moment()
     .tz('Asia/Bangkok')
     .format('H:mm:ss a, MMMM Do YYYY');
