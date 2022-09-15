@@ -5,14 +5,14 @@ export default function handler(req, res) {
   moment.locale('id');
   const default_date = moment(data_time)
     .tz('Asia/Jakarta')
-    .format('h:mm:ss a, MMMM Do YYYY');
+    .format('h:mm:ss a, dddd MMMM Do YYYY');
   const full_date = moment(data_time)
     .tz('Asia/Jakarta')
     .locale('id')
-    .format('H:mm:ss a, MMMM Do YYYY');
+    .format('H:mm:ss a, dddd MMMM Do YYYY');
   const current_date = moment()
     .tz('Asia/Bangkok')
-    .format('H:mm:ss a, MMMM Do YYYY');
+    .format('H:mm:ss a, dddd MMMM Do YYYY');
   res.status(200).json({
     locale_date: moment.tz.guess(),
     current_date,
