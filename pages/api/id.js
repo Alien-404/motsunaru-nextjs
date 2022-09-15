@@ -1,25 +1,8 @@
 import moment from 'moment-timezone';
+import 'moment/locale/id';
 
 export default function handler(req, res) {
   const data_time = 1662981377 * 1000;
-
-  // format months
-  moment.updateLocale('en', {
-    months: [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'Augustussss',
-      'Septemberer',
-      'October',
-      'November',
-      'December',
-    ],
-  });
 
   const default_date = moment(data_time)
     .tz('Asia/Jakarta')
